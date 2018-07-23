@@ -27,6 +27,7 @@ export class CurrentWeatherService {
           name: data.name,
           cod: data.cod,
           temp: data.main.temp,
+          icon: data.main.icon,
           ...mainWeather.icon
         };
         return weather;
